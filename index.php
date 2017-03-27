@@ -1,28 +1,21 @@
 <?php
-//echo "Hola mundo";
 
-    $numeros = array (
-    rand(0,10),
-    rand(0,10),
-    rand(0,10),
-    rand(0,10),
-    rand(0,10),
-    );
-    //var_dump($numeros);
+include_once "funciones.php";
+include_once "calculadora.php";
+//include "noexiste.php";
+//include "funciones.php";
 
-$promedio = array_sum($numeros) / count($numeros);
+/*require "funciones.php";
+require "noexiste.php";
+require "funciones.php";*/
 
-if($promedio < 6)
-{
-    echo "El promedio es menor a 6";
-}
+$resultado = sumar(1,2);
+echo "<br>";
+echo $resultado;
 
-if($promedio > 6)
-{
-    echo "El promedio es mayor a 6";
-}
+echo "<br>";
+$resul1 = Calculadora::Sumar(3,3);
 
-if($promedio == 6)
-{
-    echo "El promedio es igual a 6";
-}
+echo $resul1;
+
+?>
